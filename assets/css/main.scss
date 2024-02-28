@@ -1,0 +1,68 @@
+
+html{
+	margin: 0;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	color: #fff;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-size: 12px;
+	background-image: url('/images/body-bg.png');
+	background-attachment: fixed;
+	background-position-x: center;
+	background-position-y: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb(61, 13, 4);
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.mt-60{
+	margin-top:60px;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.bg-white{
+	background-color: #fff;
+}
+.bg-pink{
+	background-color: pink;
+}
+.bg-green{
+	background-color: green;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+
+.text-black{
+	color: #000;
+
+}
