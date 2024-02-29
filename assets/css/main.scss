@@ -1,4 +1,9 @@
 
+:root{
+	--primary-gradient-bg: linear-gradient(90deg, rgba(180,126,16,1) 0%, rgba(248,222,123,1) 32.8041%, rgba(255,242,165,1) 52.404%, rgba(248,222,123,1) 72.9818%, rgba(180,126,16,1) 100%);
+	--primary-title-gradient: -webkit-linear-gradient(90deg, rgba(180,126,16,1) 0%, rgba(248,222,123,1) 32.8041%, rgba(255,242,165,1) 52.404%, rgba(248,222,123,1) 72.9818%, rgba(180,126,16,1) 100%);
+}
+
 html{
 	margin: 0;
 	height: 100%;
