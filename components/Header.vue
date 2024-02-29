@@ -3,9 +3,9 @@
         <div class="cap-box"></div>
         <div class="head-box">
             <div class="logo">
-                <a class="company-link"
+                <nuxt-link to="/" class="company-link"
                     ><img src="/images/company-logo.png" alt="company-logo"
-                /></a>
+                /></nuxt-link>
             </div>
             <div class="header-nav-links">
                 <div class="nav-item">
