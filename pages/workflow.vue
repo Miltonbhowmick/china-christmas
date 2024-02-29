@@ -221,6 +221,7 @@ section.workflow {
                     width: 50%;
                 }
                 .arrow-sign {
+                    margin-top: 34px;
                 }
                 .title {
                     margin: 0;
