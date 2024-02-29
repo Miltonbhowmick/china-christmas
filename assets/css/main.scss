@@ -1,5 +1,6 @@
 
 :root{
+	--body-bg: linear-gradient(90deg, rgba(89,0,3,1) 10.6995%, rgba(27,0,1,1) 100%);
 	--primary-gradient-bg: linear-gradient(90deg, rgba(180,126,16,1) 0%, rgba(248,222,123,1) 32.8041%, rgba(255,242,165,1) 52.404%, rgba(248,222,123,1) 72.9818%, rgba(180,126,16,1) 100%);
 	--primary-title-gradient: -webkit-linear-gradient(90deg, rgba(180,126,16,1) 0%, rgba(248,222,123,1) 32.8041%, rgba(255,242,165,1) 52.404%, rgba(248,222,123,1) 72.9818%, rgba(180,126,16,1) 100%);
 }
@@ -15,16 +16,16 @@ body{
 	color: #fff;
 	font-family: 'Microsoft YaHei', sans-serif;
 	font-size: 12px;
-	background-image: url('/images/body-bg.png');
-	background-attachment: fixed;
-	background-position-x: center;
-	background-position-y: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-color: rgb(61, 13, 4);
+	// background-image: url('/images/body-bg.png');
+	// background-attachment: fixed;
+	// background-position-x: center;
+	// background-position-y: top;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
+	// background-origin: initial;
+	// background-clip: initial;
+	background: var(--body-bg);
 }
 
 a{
