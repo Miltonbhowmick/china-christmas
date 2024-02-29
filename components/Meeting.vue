@@ -17,7 +17,7 @@
     background-image: url("/images/meeting-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 80vh;
     width: 100%;
     .header {
         width: 100%;

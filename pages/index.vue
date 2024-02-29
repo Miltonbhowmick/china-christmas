@@ -4,6 +4,7 @@
         <Services class="mt-negative-7rem" />
         <Meeting />
         <TrumpService />
+        <Treasure />
     </section>
 </template>
 <script setup>
