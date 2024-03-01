@@ -325,7 +325,7 @@ const coinData = [
                                 align-items: center;
                                 .title {
                                     margin-top: -10px;
-                                    font-size: 20px;
+                                    font-size: 26px;
                                     font-weight: 600;
                                     background: var(--primary-title-gradient);
                                     -webkit-background-clip: text;
