@@ -243,6 +243,7 @@ section.workflow {
                     text-align: center;
                 }
                 .notices {
+                    width: 60%;
                     font-size: 20px;
                     text-align: center;
                 }

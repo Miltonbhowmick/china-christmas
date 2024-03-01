@@ -8,38 +8,83 @@
                 /></nuxt-link>
             </div>
             <div class="header-nav-links">
-                <div class="nav-item">
+                <nuxt-link to="/" class="nav-item">
                     <img
+                        v-if="menuActive === 0"
                         class="bg"
                         src="/images/yellow-nav-item-bg.png"
                         alt="red-nav-item-bg"
                     />
-                    <span class="title text-black">首頁</span>
-                </div>
-                <div class="nav-item">
                     <img
+                        v-else
                         class="bg"
                         src="/images/red-nav-item-bg.png"
                         alt="red-nav-item-bg"
                     />
-                    <span class="title">遊戲介紹</span>
-                </div>
-                <div class="nav-item">
+
+                    <span
+                        class="title"
+                        :class="[menuActive === 0 ? 'text-black' : 'white']"
+                        >首頁</span
+                    >
+                </nuxt-link>
+                <nuxt-link to="/timeline" class="nav-item">
                     <img
+                        v-if="menuActive === 1"
+                        class="bg"
+                        src="/images/yellow-nav-item-bg.png"
+                        alt="red-nav-item-bg"
+                    />
+                    <img
+                        v-else
                         class="bg"
                         src="/images/red-nav-item-bg.png"
                         alt="red-nav-item-bg"
                     />
-                    <span class="title">操作指南</span>
-                </div>
-                <div class="nav-item">
+                    <span
+                        class="title"
+                        :class="[menuActive === 1 ? 'text-black' : 'white']"
+                        >遊戲介紹</span
+                    >
+                </nuxt-link>
+                <nuxt-link to="/workflow" class="nav-item">
                     <img
+                        v-if="menuActive === 2"
+                        class="bg"
+                        src="/images/yellow-nav-item-bg.png"
+                        alt="red-nav-item-bg"
+                    />
+                    <img
+                        v-else
                         class="bg"
                         src="/images/red-nav-item-bg.png"
                         alt="red-nav-item-bg"
                     />
-                    <span class="title">客服聯繫</span>
-                </div>
+                    <span
+                        class="title"
+                        :class="[menuActive === 2 ? 'text-black' : 'white']"
+                        >操作指南</span
+                    >
+                </nuxt-link>
+                <nuxt-link to="/signin" class="nav-item">
+                    <img
+                        v-if="menuActive === 3"
+                        class="bg"
+                        src="/images/yellow-nav-item-bg.png"
+                        alt="red-nav-item-bg"
+                    />
+                    <img
+                        v-else
+                        class="bg"
+                        src="/images/red-nav-item-bg.png"
+                        alt="red-nav-item-bg"
+                    />
+                    <span
+                        class="title"
+                        :class="[menuActive === 3 ? 'text-black' : 'white']"
+                        >客服聯繫</span
+                    >
+                </nuxt-link>
                 <div class="nav-item expand-50">
                     <div class="title">客服聯繫</div>
                 </div>
@@ -50,6 +95,15 @@
 
 <script setup>
 import redNavItem from "~/assets/images/red-nav-item-bg.png";
+
+const route = useRoute();
+
+var menuActive = computed(() => {
+    if (route.path === "/") return 0;
+    else if (route.path === "/timeline") return 1;
+    else if (route.path === "/workflow") return 2;
+    else if (route.path === "/signin") return 3;
+});
 </script>
 
 <style scoped lang="scss">
@@ -102,6 +156,9 @@ import redNavItem from "~/assets/images/red-nav-item-bg.png";
                     left: 50%;
                     transform: translate(-50%, -50%);
                     font-size: 16px;
+                    &.white {
+                        color: #fff;
+                    }
                 }
             }
         }
