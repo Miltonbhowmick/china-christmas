@@ -1,7 +1,10 @@
 <template>
     <div class="trump-service-box">
         <div class="header">
-            <div class="title">為什麼在這裡玩？</div>
+            <!-- <div class="title">為什麼在這裡玩？</div> -->
+            <div class="title">
+                <div class="image"><img src="/images/trump-title.png" /></div>
+            </div>
         </div>
         <div class="content">
             <div class="info">
@@ -63,6 +66,11 @@
             background: var(--primary-title-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: flex;
+            justify-content: center;
+            .image {
+                width: 60%;
+            }
         }
     }
     .content {
@@ -89,6 +97,7 @@
                 }
                 .description {
                     width: 60%;
+                    font-size: 16px;
                 }
             }
         }

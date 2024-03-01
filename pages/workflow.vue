@@ -1,7 +1,12 @@
 <template>
     <section class="workflow">
         <div class="header">
-            <h2 class="title">操作指南</h2>
+            <!-- <h2 class="title">操作指南</h2> -->
+            <div class="title">
+                <div class="image">
+                    <img src="/images/workflow-title.png" />
+                </div>
+            </div>
         </div>
 
         <div class="mega-news">
@@ -99,13 +104,18 @@ section.workflow {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            .image {
+                width: 20%;
+            }
         }
     }
     .mega-news {
         display: flex;
         justify-content: center;
         .box {
-            width: 50%;
+            width: 45%;
             position: relative;
             .coin-box {
                 z-index: 99;
@@ -152,13 +162,13 @@ section.workflow {
                     );
 
                     .context {
-                        width: 70%;
+                        width: 90%;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         gap: 10px;
                         .title {
-                            margin: 0 0 20px 0;
+                            margin: 0 0 10px 0;
                             font-size: 20px;
                             font-weight: 600;
                             background: var(--primary-title-gradient);
@@ -261,9 +271,6 @@ section.workflow {
                 .head-box {
                     width: 28%;
                     height: 70px;
-                    color: #000;
-                    font-size: 30px;
-                    font-weight: 600;
                     background: var(--primary-title-gradient);
                     clip-path: polygon(
                         0 10px,
@@ -276,6 +283,11 @@ section.workflow {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    h3 {
+                        color: #000;
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
                 }
                 .description {
                     width: 40%;

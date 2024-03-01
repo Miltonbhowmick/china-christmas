@@ -20,7 +20,7 @@
 
 <style scoped lang="scss">
 .service-box {
-    background-image: url("/images/services-bg.png");
+    background-image: url("/images/service-bg-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 130vh;
@@ -40,6 +40,7 @@
             flex-direction: column;
             align-items: flex-start;
             .title {
+                margin-bottom: 10px;
                 font-size: 2.5rem;
                 font-weight: 600;
                 background: var(--primary-title-gradient);

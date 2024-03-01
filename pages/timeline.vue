@@ -1,7 +1,12 @@
 <template>
     <section class="timeline">
         <div class="header">
-            <h2 class="title">遊戲介紹</h2>
+            <!-- <h2 class="title">遊戲介紹</h2> -->
+            <div class="title">
+                <div class="image">
+                    <img src="/images/hero-banner-title.png" />
+                </div>
+            </div>
         </div>
 
         <div class="content">
@@ -17,20 +22,27 @@
                     <div class="item">
                         <div class="overlap">
                             <div class="context">
-                                <h4 class="title">{{ data.title }}</h4>
-                                <p
-                                    v-for="(
-                                        desObj, idx
-                                    ) in data.descriptionList"
-                                    :key="'desc_' + idx"
-                                    class="description"
-                                >
-                                    <span
-                                        v-if="desObj.colorValue"
-                                        class="bg-color"
-                                        >{{ desObj.colorValue }}</span
-                                    ><span>{{ desObj.value }}</span>
-                                </p>
+                                <!-- <h4 class="title">{{ data.title }}</h4> -->
+                                <div class="title">
+                                    <div class="image">
+                                        <img :src="data.titleImage" />
+                                    </div>
+                                </div>
+                                <div class="description-box">
+                                    <p
+                                        v-for="(
+                                            desObj, idx
+                                        ) in data.descriptionList"
+                                        :key="'desc_' + idx"
+                                        class="description"
+                                    >
+                                        <span
+                                            v-if="desObj.colorValue"
+                                            class="bg-color"
+                                            >{{ desObj.colorValue }}</span
+                                        ><span>{{ desObj.value }}</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,6 +57,7 @@ let timelineDataList = [
     {
         coinSrc: "/images/coin1.png",
         title: "十三張遊戲",
+        titleImage: "/images/timeline-1-title.png",
         descriptionList: [
             {
                 colorValue: null,
@@ -83,6 +96,7 @@ let timelineDataList = [
     {
         coinSrc: "/images/coin6.png",
         title: "十三張遊戲",
+        titleImage: "/images/timeline-2-title.png",
         descriptionList: [
             {
                 colorValue: null,
@@ -132,6 +146,11 @@ section.timeline {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            .image {
+                width: 20%;
+            }
         }
     }
     .content {
@@ -211,7 +230,14 @@ section.timeline {
                             background: var(--primary-title-gradient);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-                            text-align: center;
+                            display: flex;
+                            justify-content: flex-start;
+                            .image {
+                                width: 40%;
+                            }
+                        }
+                        .description-box {
+                            margin-top: -2rem;
                         }
                         .description {
                             margin: 0;

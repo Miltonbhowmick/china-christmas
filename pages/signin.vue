@@ -7,14 +7,16 @@
                         @click="toggleAuth = 0"
                         class="signin-btn"
                         :class="{ active: toggleAuth === 0 }"
-                        >註冊</a
-                    >
+                        ><div class="image">
+                            <img src="/images/signup.png" /></div
+                    ></a>
                     <a
                         @click="toggleAuth = 1"
                         class="signup-btn"
                         :class="{ active: toggleAuth === 1 }"
-                        >註冊</a
-                    >
+                        ><div class="image">
+                            <img src="/images/signin.png" /></div
+                    ></a>
                 </div>
                 <form class="form" v-if="toggleAuth === 0">
                     <p class="headline">
@@ -45,7 +47,7 @@
                             placeholder="(請輸入您的電子郵件地址)"
                         />
                     </div>
-                    <button class="btn">註冊</button>
+                    <button class="btn signup">註冊</button>
                     <p class="notice">登入（如果已經是會員）</p>
                 </form>
                 <form class="form" v-else-if="toggleAuth === 1">
@@ -67,7 +69,7 @@
                     <p class="notice">
                         忘記密碼？ (如果您忘記了密碼，請點擊此處重設)
                     </p>
-                    <button class="btn">登入</button>
+                    <button class="btn signin">登入</button>
                     <p class="notice">還不是會員？立即註冊!</p>
                     <p class="notice">(加入我們，開�您的運氣之旅)</p>
                 </form>
@@ -115,19 +117,25 @@ section.signin {
                     text-align: center;
                     height: 70px;
                     cursor: pointer;
+                    display: flex;
+                    justify-content: center;
                     &.active {
                         border-bottom: 5px solid rgba(248, 222, 123, 1);
+                    }
+                    .image {
+                        margin-left: 13px;
                     }
                 }
             }
             .form {
+                margin-bottom: 30px;
                 width: 60%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 15px;
+                gap: 20px;
                 .headline {
-                    margin: 0;
+                    margin: 30px 0 0 0;
                     font-size: 20px;
                     background: var(--primary-title-gradient);
                     -webkit-background-clip: text;
@@ -139,7 +147,7 @@ section.signin {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 10px;
+                    gap: 12px;
                     .label {
                         font-size: 20px;
                         background: var(--primary-title-gradient);
@@ -148,7 +156,7 @@ section.signin {
                         text-align: center;
                     }
                     input {
-                        border-radius: 4px;
+                        border-radius: 8px;
                         width: 100%;
                         height: 40px;
                         border: none;
@@ -156,7 +164,7 @@ section.signin {
                     }
                 }
                 .btn {
-                    margin-top: 30px;
+                    // margin-top: 30px;
                     border: none;
                     width: 40%;
                     // height: 70px;
@@ -177,8 +185,8 @@ section.signin {
                     align-items: center;
                 }
                 .notice {
+                    margin: 0;
                     font-size: 14px;
-                    margin-bottom: 30px;
                     background: var(--primary-title-gradient);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
