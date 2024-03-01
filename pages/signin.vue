@@ -48,7 +48,7 @@
                         />
                     </div>
                     <button class="btn signup">註冊</button>
-                    <p class="notice">登入（如果已經是會員）</p>
+                    <p class="hint">登入（如果已經是會員）</p>
                 </form>
                 <form class="form" v-else-if="toggleAuth === 1">
                     <p class="headline">
@@ -66,12 +66,14 @@
                         <label class="label">密碼：</label>
                         <input type="text" placeholder="(請輸入您的密碼)" />
                     </div>
-                    <p class="notice">
+                    <p class="hint">
                         忘記密碼？ (如果您忘記了密碼，請點擊此處重設)
                     </p>
                     <button class="btn signin">登入</button>
-                    <p class="notice">還不是會員？立即註冊!</p>
-                    <p class="notice">(加入我們，開�您的運氣之旅)</p>
+                    <div class="policy">
+                        <p class="notice">還不是會員？立即註冊!</p>
+                        <p class="notice">(加入我們，開�您的運氣之旅)</p>
+                    </div>
                 </form>
             </div>
         </div>
@@ -173,24 +175,34 @@ section.signin {
                     font-weight: 400;
                     background: var(--primary-title-gradient);
                     clip-path: polygon(
-                        0 10px,
-                        10px 0,
+                        0 6px,
+                        6px 0,
                         100% 0,
-                        100% calc(100% - 10px),
-                        calc(100% - 10px) 100%,
+                        100% calc(100% - 6px),
+                        calc(100% - 6px) 100%,
                         0 100%
                     );
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
-                .notice {
-                    margin: 0;
+                .hint {
+                    margin-top: -13px;
                     font-size: 14px;
                     background: var(--primary-title-gradient);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     text-align: center;
+                }
+                .policy {
+                    .notice {
+                        margin: 0;
+                        font-size: 14px;
+                        background: var(--primary-title-gradient);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-align: center;
+                    }
                 }
             }
         }

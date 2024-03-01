@@ -38,7 +38,7 @@
                         首先，請訪問我們的網 站並點擊「註冊」按鈕。
                     </p>
                 </div>
-                <div class="item">
+                <div class="item w-10">
                     <div class="arrow-sign">
                         <img src="/images/Asset 52.png" alt="Asset 50" />
                     </div>
@@ -47,12 +47,14 @@
                     <div class="icon-box">
                         <img src="/images/Asset 50.png" alt="Asset 50" />
                     </div>
-                    <h3 class="title">訪問註冊頁面</h3>
+                    <h3 class="title">填寫個人資料</h3>
                     <p class="notices">
-                        首先，請訪問我們的網 站並點擊「註冊」按鈕。
+                        在註冊表單中輸入您的姓 名、電話號碼、身份證字型
+                        大小（為了確保您的年齡 符合遊戲要求）以及您的
+                        電子郵件地址。
                     </p>
                 </div>
-                <div class="item">
+                <div class="item w-10">
                     <div class="arrow-sign">
                         <img src="/images/Asset 52.png" alt="Asset 50" />
                     </div>
@@ -61,9 +63,11 @@
                     <div class="icon-box">
                         <img src="/images/Asset 51.png" alt="Asset 51" />
                     </div>
-                    <h3 class="title">訪問註冊頁面</h3>
+                    <h3 class="title">完成註冊</h3>
                     <p class="notices">
-                        首先，請訪問我們的網 站並點擊「註冊」按鈕。
+                        核對您的資料無誤後， 點擊「提交」完成註冊過
+                        程。您將收到一封確認 郵件，請按照郵件中的
+                        指示�動您的帳號
                     </p>
                 </div>
             </div>
@@ -141,7 +145,7 @@ section.workflow {
 
                 position: relative;
                 .overlap {
-                    padding: 50px 0;
+                    padding: 40px 0;
                     display: flex;
                     justify-content: center;
                     position: relative;
@@ -162,7 +166,7 @@ section.workflow {
                     );
 
                     .context {
-                        width: 90%;
+                        width: 85%;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
@@ -198,9 +202,7 @@ section.workflow {
         .head-box {
             width: 28%;
             height: 70px;
-            color: #000;
-            font-size: 30px;
-            font-weight: 600;
+
             background: var(--primary-title-gradient);
             clip-path: polygon(
                 0 10px,
@@ -213,6 +215,11 @@ section.workflow {
             display: flex;
             justify-content: center;
             align-items: center;
+            h3 {
+                color: #000;
+                font-size: 40px;
+                font-weight: 400;
+            }
         }
         .flow-content {
             width: 70%;
@@ -222,12 +229,17 @@ section.workflow {
             align-items: flex-start;
             gap: 10px;
             .item {
+                width: 33%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                &.w-10 {
+                    width: 10%;
+                }
                 .icon-box {
+                    margin-left: 30px;
                     width: 50%;
                 }
                 .arrow-sign {
@@ -243,7 +255,7 @@ section.workflow {
                     text-align: center;
                 }
                 .notices {
-                    width: 60%;
+                    width: 80%;
                     font-size: 20px;
                     text-align: center;
                 }
