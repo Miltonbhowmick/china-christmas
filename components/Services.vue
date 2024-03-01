@@ -35,7 +35,7 @@
         align-items: center;
         .info {
             margin-top: 4rem;
-            width: 50%;
+            width: 44%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;

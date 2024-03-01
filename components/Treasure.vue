@@ -27,7 +27,14 @@
                     <div class="overlap">
                         <div class="context">
                             <div class="left">
-                                <div class="title">平台特色</div>
+                                <!-- <div class="title">平台特色</div> -->
+                                <div class="title">
+                                    <div class="image">
+                                        <img
+                                            src="/images/treasure-title-1.png"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
                                 <div class="context-item">
@@ -63,7 +70,14 @@
                     <div class="overlap">
                         <div class="context">
                             <div class="left">
-                                <div class="title">安全可靠</div>
+                                <!-- <div class="title">安全可靠</div> -->
+                                <div class="title">
+                                    <div class="image">
+                                        <img
+                                            src="/images/treasure-title-2.png"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
                                 <div class="context-item">
@@ -98,7 +112,14 @@
                     <div class="overlap">
                         <div class="context">
                             <div class="left">
-                                <div class="title">精選遊戲</div>
+                                <!-- <div class="title">精選遊戲</div> -->
+                                <div class="title">
+                                    <div class="image">
+                                        <img
+                                            src="/images/treasure-title-3.png"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
                                 <ul class="coin-list">
@@ -198,7 +219,7 @@ const coinData = [
             display: flex;
             justify-content: center;
             .item {
-                width: 40%;
+                width: 30%;
                 height: 50px;
                 padding: 4px 4px 0px 4px;
                 clip-path: polygon(
@@ -225,7 +246,7 @@ const coinData = [
         }
         .description {
             margin-top: 2rem;
-            width: 40%;
+            width: 30%;
             font-size: 14px;
             text-align: center;
         }
@@ -272,6 +293,7 @@ const coinData = [
                         align-items: center;
                         gap: 10px;
                         .left {
+                            height: 15rem;
                             width: 10%;
                             display: flex;
                             justify-content: center;
@@ -284,6 +306,11 @@ const coinData = [
                                 background: var(--primary-title-gradient);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                display: flex;
+                                align-items: center;
+                                .image {
+                                    // width: 30%;
+                                }
                             }
                         }
                         .right {
