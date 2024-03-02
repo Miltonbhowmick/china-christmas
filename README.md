@@ -1,75 +1,18 @@
-# Nuxt 3 Minimal Starter
+# China Christmas, a simple Nuxt JS front-end app
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> This application is just for simple frontend design of a china friend who designed it by Above Illustrator. I converted it to web version. <a href="https://china-christmas.vercel.app/">demo</a>
+<p align="center">
+	<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Miltonbhowmick/china-christmas">
+</p>
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+# Install Setup
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+1. Go to your desired project working directory.
+2. Open the terminal on this directory.
+3. Clone the repository
+4. type 'cd china-christmas'
+5. yarn install
+6. yarn dev
+7. See the running port of localhost. Ex. 'localhost:3000'
+8. Go to your browser and write that localhost url from above 7 no. point.
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
